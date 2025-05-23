@@ -1,0 +1,12 @@
+## Kesimpulan
+
+Pada tugas pemrograman web ini, dilakukan pengembangan sistem manajemen data alat elektromedis dengan menambahkan tiga atribut baru yaitu `kode_alat`, `kondisi`, dan `tanggal_maintenance`. Penambahan atribut ini bertujuan untuk memperkaya informasi yang disimpan sehingga dapat memberikan data yang lebih lengkap dan akurat mengenai kondisi serta jadwal perawatan alat.
+
+Proses pembaruan meliputi:
+
+* Penyesuaian struktur tabel database dengan menambahkan kolom baru sesuai atribut yang diinginkan.
+* Modifikasi tampilan form input dan edit agar dapat menerima dan menampilkan data untuk ketiga atribut baru tersebut.
+* Perubahan pada kode PHP, khususnya pada file `edit.php`, untuk menangani pengambilan data dari database dan pemrosesan update data dengan memasukkan atribut baru ke dalam query SQL.
+* Penyesuaian query SQL pada proses update untuk memastikan seluruh data, baik atribut lama maupun baru, tersimpan dengan benar.
+
+Dengan pembaruan ini, sistem menjadi lebih komprehensif dan siap digunakan untuk pengelolaan alat elektromedis dengan informasi yang lebih detail dan terstruktur.

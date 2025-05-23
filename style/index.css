@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f0ff 0%, #f8fbff 100%);
+    min-height: 100vh;
+    color: #222e3a;
+}
+
+header {
+    background: #2563eb;
+    color: #fff;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 16px rgba(37, 99, 235, 0.08);
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #dbeafe;
+}
+
+.container {
+    max-width: 1200px; /* Perbesar lebar container */
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(37, 99, 235, 0.10);
+    padding: 48px 40px; /* Tambahkan padding agar lebih proporsional */
+}
+
+
+/* Button Styles */
+a, .btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    display: inline-block;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+a:hover, .btn:hover {
+    background: #1e40af;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px; /* Sesuaikan ukuran tombol */
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+    border-radius: 6px; /* Sedikit lebih kecil */
+    text-align: center;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn.edit {
+    background: #22c55e;
+}
+
+.btn.edit:hover {
+    background: #16a34a;
+}
+
+.btn.delete {
+    background: #ef4444;
+}
+
+.btn.delete:hover {
+    background: #b91c1c;
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Pastikan tabel menggunakan seluruh lebar container */
+    max-width: 100%; /* Hindari overflow */
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 18px;
+    background: #f9fbff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(37, 99, 235, 0.06);
+}
+
+th, td {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 1rem;
+    white-space: nowrap; /* Hindari teks meluber */
+}
+
+th {
+    background: #2563eb;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 2px solid #e0e7ef;
+}
+
+tr {
+    transition: background 0.15s;
+}
+
+tr:nth-child(even) {
+    background: #f1f5fb;
+}
+
+tr:hover {
+    background: #e0e7ef;
+}
+
+td {
+    color: #222e3a;
+    border-bottom: 1px solid #e0e7ef;
+}
+
+td:last-child {
+    display: flex;
+    gap: 10px; /* Tambahkan jarak antar tombol */
+    justify-content: flex-start; /* Rapatkan tombol ke kiri */
+    align-items: center;
+    border-bottom: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 18px 6vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 10px 2vw;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 18px;
+        border-radius: 10px;
+        background: #f9fbff;
+        box-shadow: 0 1px 6px rgba(37, 99, 235, 0.06);
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 10px;
+        border-bottom: 1px solid #e0e7ef;
+        font-size: 0.98rem;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #2563eb;
+        flex-basis: 45%;
+    }
+}
